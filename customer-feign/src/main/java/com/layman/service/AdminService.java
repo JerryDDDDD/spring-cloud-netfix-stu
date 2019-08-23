@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @Data 2019/8/22 12:01
  * @Version 3.0
  **/
-@FeignClient(value = "provider")
+@FeignClient(value = "provider", fallback = AdminServiceHystrix.class)
 public interface AdminService {
 
     @RequestMapping(value = "hi", method = RequestMethod.GET)
