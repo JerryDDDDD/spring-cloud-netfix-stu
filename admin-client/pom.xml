@@ -61,9 +61,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <mainClass>com.funtl.hello.spring.cloud.admin.client.AdminClientApplication</mainClass>
-                </configuration>
             </plugin>
         </plugins>
     </build>

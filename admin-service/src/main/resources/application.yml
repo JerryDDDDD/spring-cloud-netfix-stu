@@ -1,6 +1,6 @@
 spring:
   application:
-    name: hello-spring-cloud-admin
+    name: admin
   zipkin:
     base-url: http://localhost:9411
 
@@ -15,7 +15,7 @@ management:
     web:
       exposure:
         # 注意：此处在视频里是 include: ["health", "info"] 但已无效了，请修改
-        include: '*'
+        include: health,info
 
 eureka:
   client:
